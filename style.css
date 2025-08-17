@@ -1,5 +1,5 @@
 /* * {
-    border: 2px solid #000;
+    border: 2px solid #ff0000;
 } */
 
 
@@ -35,11 +35,15 @@ body {
     font-size: 25px;
 }
 
-img {
+.header-logo {
     width: 38px;
     height: 38px;
     filter: invert(100%);
+    border: #000 1px solid;
+    border-radius: 10px;
+    padding: 2px;
 }
+
 
 /* make the logo and header change color shade when hover */
 .topbar-sub-container-left a:hover,
@@ -206,7 +210,7 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    padding: 80px 20px;
+    padding: 80px 20px 40px 20px;
     margin: 0 auto;
     max-width: 80%;
 }
@@ -275,6 +279,65 @@ img {
     font-weight: 250;
     text-align: center;
     color: #000;
-    text-align: left;
-    
+    text-align: left;   
 }
+
+/* Footer */
+
+.footer-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 20px 70px;
+    background-color: #000;
+    color: #fff;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+
+/* additional footer */
+
+.foot {
+    background-color: #000;
+    padding-bottom: 10px;
+}
+
+.footer-bottom {
+    font-size: 40px;
+      font-weight: bold;
+      background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text; /* For Firefox */
+      color: transparent;
+      text-align: left;
+      padding-left: 8%;
+}
+
+.lips {
+     filter: invert(25%) sepia(100%) saturate(1000%) hue-rotate(-50deg) brightness(1.1);
+}
+
+.footer-right {
+    /* border: red 1px solid; */
+    padding: 10px;
+    font-size: 20px;
+    position: relative;
+    right: -16%;
+    top: 70px
+}
+
